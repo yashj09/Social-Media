@@ -48,7 +48,7 @@ const Login = () => {
       // Automatically fill in the login form fields
       setEmail(email);
       setPassword(password);
-      navigate("/Profile");
+      navigate("/PostPage");
     } catch (error) {
       console.error("Error registering user:", error.message);
       // Handle registration errors here (e.g., display an error message to the user)
@@ -71,7 +71,7 @@ const Login = () => {
         console.log("Welcome back!", email, uid);
 
         // Navigate to '/dashboard' with email and uid in state
-        navigate("/dashboard", { state: { userEmail: email, uid } });
+        navigate("/PostPage", { state: { userEmail: email, uid } });
       }
     } catch (error) {
       console.log("Error in login", error.message);

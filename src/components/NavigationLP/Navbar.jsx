@@ -22,6 +22,9 @@ const Navbar = () => {
   return (
     <nav className="navMenu">
       <div className="navwrapper">
+        <Link to="/Login" className="navbar-link">
+          Login
+        </Link>
         <Link to="/PostPage" className="navbar-link">
           Posts
         </Link>

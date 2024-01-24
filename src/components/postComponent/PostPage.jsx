@@ -34,7 +34,6 @@ const PostPage = () => {
       <div className={`popup ${isPopupVisible ? "visible" : ""}`}>
         <PostForm user={user} closePopup={closePopup} />
       </div>
-
       <button onClick={openPopup}>Add Post</button>
       <PostList />
     </div>

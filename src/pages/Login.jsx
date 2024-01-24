@@ -82,7 +82,7 @@ const Login = () => {
     <div className="none">
       <div className="login-box">
         <h2 className="text-3xl loginboxH2  ">{action}</h2>
-        <p className="text-base mb-1 text-white ">
+        <p className="text-base mb-1 text-  ">
           Welcome Back! Please Enter Your Details.{" "}
         </p>
 
@@ -92,7 +92,7 @@ const Login = () => {
           ) : (
             <input
               type="text"
-              className="w-full text-white  py-2 my-1 border-b bg-transparent border-black outline-none focus:outline-none"
+              className="w-full   py-2 my-1 border-b bg-transparent border-black outline-none focus:outline-none"
               placeholder="UserName"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -101,7 +101,7 @@ const Login = () => {
 
           <input
             type="email"
-            className="w-full text-white  py-2 my-1 border-b bg-transparent border-black outline-none focus:outline-none"
+            className="w-full   py-2 my-1 border-b bg-transparent border-black outline-none focus:outline-none"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -109,7 +109,7 @@ const Login = () => {
 
           <input
             type="password"
-            className="w-full text-white  py-2 my-1 border-b bg-transparent border-black outline-none focus:outline-none"
+            className="w-full   py-2 my-1 border-b bg-transparent border-black outline-none focus:outline-none"
             placeholder="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -119,14 +119,14 @@ const Login = () => {
         <div className="w-full py-5 flex items-center justify-between my-2">
           <div className="w-full flex ">
             <input type="checkbox" className=" w-4 h-4 mr-2" value="" />
-            <p className="text-sm text-white ">Remember me for 30 days</p>
+            <p className="text-sm text-  ">Remember me for 30 days</p>
           </div>
           {action === "Register" ? (
             <div></div>
           ) : (
             <p
-              className="text-sm  font-medium whitespace-nowrap cursor-pointer underline underline-offset-2 "
-              style={{ color: "#5865f2" }}
+              className="text-sm  font-sm space-nowrap cursor-pointer underline underline-offset-2 "
+              style={{ color: "#1473e6" }}
             >
               Forget Password ?
             </p>
@@ -137,9 +137,7 @@ const Login = () => {
           {action === "Register" ? (
             <button
               className={
-                action === "Register"
-                  ? "loginButtonStyle btn-10"
-                  : "loginButtonStyle btn-10"
+                action === "Register" ? "loginButtonStyle" : "loginButtonStyle "
               }
               onClick={() => {
                 setAction("Register");
@@ -151,9 +149,7 @@ const Login = () => {
           ) : (
             <button
               className={
-                action === "Login"
-                  ? "loginButtonStyle btn-10 "
-                  : "loginButtonStyle btn-10"
+                action === "Login" ? "loginButtonStyle " : "loginButtonStyle "
               }
               onClick={() => {
                 setAction("Login");
@@ -179,16 +175,13 @@ const Login = () => {
           </div> */}
         <div className="w-full flex items-center justify-center relative py-2">
           <div className="w-full my-4 h-[1px] bg-black/40 "> </div>
-          <p
-            className="text-lg absolute text-black "
-            style={{ color: "white" }}
-          >
+          <p className="text-lg absolute text-black " style={{ color: " " }}>
             or
           </p>
         </div>
 
         <div
-          className="w-60 ml-10 my-4 text-[#060606] font-semibold bg-white border border-black/40 rounded-md p-2  text-center flex items-center justify-center cursor-pointer"
+          className="w-60 ml-10 my-4 text-[#060606] font-semibold bg-  border border-black/40 rounded-md p-2  text-center flex items-center justify-center cursor-pointer"
           type=""
         >
           <img src={google} className="h-6 mr-2" alt="" />
@@ -197,7 +190,7 @@ const Login = () => {
 
         <div className="w-full flex items-center justify-center">
           {action === "Register" ? (
-            <p className="text-sm font-normal text-white">
+            <p className="text-sm font-normal text- ">
               Already have an account?
               <span
                 className="font-semibol px-5 underline underline-offset-2 cursor-pointer"
@@ -210,11 +203,11 @@ const Login = () => {
               </span>
             </p>
           ) : (
-            <p className="text-sm font-normal text-white">
+            <p className="text-sm font-normal text- ">
               Don't have an account? &nbsp;
               <span
                 className="font-semibol underline underline-offset-2 cursor-pointer "
-                style={{ color: "#5865f2" }}
+                style={{ color: "#1473e6" }}
                 onClick={() => {
                   setAction("Register");
                 }}

@@ -22,13 +22,15 @@ const Home = () => {
         {/* Hero section */}
         <div className="hero-section">
           <div className="LeftText">
-            <h1 className="title">Still Learning but </h1>
-            <h1 className="title2">not Earning?</h1>
+            <h1 className="title">
+              Scrolling without monetizing and learning?
+            </h1>
+            {/* <h1 className="title2">not Earning?</h1> */}
             <p className="subtitle">
-              Revolutionizing Education by Bringing Learners and Educators{" "}
-              <br />
-              Together Through Blockchain Technology to <br />
-              Monetize Learning and Teaching.
+              Revolutionizing education by creating a dedicated educational
+              social media platform empowered by Web3, where learners and <br />{" "}
+              content creators come together through blockchain technology to
+              monetize learning and teaching
             </p>
           </div>
           <div className="Right">
@@ -42,19 +44,19 @@ const Home = () => {
           </div>
           <div className="sectionRight">
             <h1 className="section-heading">
-              Unlocking the Future of Education
+              Unlocking the Future of Education and Social Media
             </h1>
             <h2 className="section-subheading">
-              Learnhattan Blockchain-Powered Learning Ecosystem
+              Learnhattan, a Blockchain-Powered Learning Ecosystem.
             </h2>
             <p className="section-text">
               Incorporating Crypto and Web3, students can monetize their
-              learning experience <br /> while accessing tutors from around the
-              world. Our platform ellow sadents <br />
-              to cern tokens by solving quizzes, participating in discussions,{" "}
-              <br />
-              and promoting courses. Courses are represented as assets, <br />{" "}
-              enabling collaborative development and expansion{" "}
+              engagement while accessing content from around the world. Our
+              platform allows students to earn tokens by solving quizzes,
+              participating in discussions, and engaging in various activities.
+              Contents are represented as assets, enabling collaborative
+              development and expansion. Content creators monetize their content
+              with the help of smart contracts.
             </p>
           </div>
         </div>
@@ -69,62 +71,56 @@ const Home = () => {
                     <i class="fa fa-gamepad">
                       <FaBitcoin />
                     </i>
-                    <h3>Courses as NFT</h3>
+                    <h3>Content as Asset</h3>
                     <p>
-                      Courses and content by tutors are ranked based on
-                      popularity. Prices of content are varied like NFTs.
+                      Courses treated as blockchain assets, ensuring
+                      transparency and dynamic pricing.
                     </p>
                   </div>
                   <div class="fea-box">
                     <i class="fa-solid fa-fire-flame-curved">
                       <FaGlobe />
                     </i>
-                    <h3>Community</h3>
+                    <h3>Web3 Incentivization</h3>
                     <p>
-                      An open network allows the global education community to
-                      collaborative develop, improve and expand the content
-                      library overtime.
+                      Rewards for active engagement by content creators and
+                      learners.
                     </p>
                   </div>
                   <div class="fea-box">
                     <i class="fa-solid fa-arrow-right-arrow-left">
                       <FaHandHoldingUsd />
                     </i>
-                    <h3>Access & Afford</h3>
-                    <p>
-                      Decentralized education marketplace where student can
-                      access no cost or free learning recources from around
-                      world.
-                    </p>
+                    <h3>Focused Educational Blockchain</h3>
+                    <p>Verified, distraction-free educational content.</p>
                   </div>
                   <div class="fea-box">
                     <i class="fa-solid fa-timeline">
                       <FaChalkboardTeacher />
                     </i>
-                    <h3>Adaptive Learning</h3>
+                    <h3>Token Monetization</h3>
                     <p>
-                      Use analytics to personalize content, and difficulty
-                      levels based on performance like a game.
+                      Token-based monetization empowers content creators
+                      transparently.
                     </p>
                   </div>
                   <div class="fea-box">
                     <i class="fa-brands fa-bitcoin">
                       <FaUserGraduate />
                     </i>
-                    <h3>Creator-Student</h3>
+                    <h3>Decentralized Identity</h3>
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Impedit, dolore iste inventore debitis est incidunt.
+                      Users control their identity securely on the blockchain.
                     </p>
                   </div>
                   <div class="fea-box">
                     <i class="fa-solid fa-city">
                       <FaTrophy />
                     </i>
-                    <h3>Incentivisation</h3>
+                    <h3>Privacy on Blockchain</h3>
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Dolore aperiam possimus animi, cupiditate ad et.
+                      Emphasis on privacy and security through decentralized
+                      technologies.
                     </p>
                   </div>
                 </div>
@@ -232,7 +228,7 @@ const Home = () => {
           <img src="/assets/images/Roadmap.png" alt="roadmap" />
         </div>
 
-        <div className="Achievements">
+        {/* <div className="Achievements">
           <div className="sectionLeft">
             <h3 className="section-heading">Achievements</h3>
             <p className="section-text">Some information about achievements</p>
@@ -244,7 +240,7 @@ const Home = () => {
               <div className="card glass">Learnhattan</div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Call To Action */}
 
         <div className="cta" id="cta">

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
-import "./Navbar.css"; // Import your CSS file
+import "./Navbar.css";
 import Wallet from "../../pages/Wallet";
 const Navbar = () => {
   const navigate = useNavigate();

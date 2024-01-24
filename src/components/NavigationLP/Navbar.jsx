@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 import "./Navbar.css"; // Import your CSS file
 // import WalletButton from './WalletButton';
+import Wallet from "../../pages/Wallet";
 const Navbar = () => {
   const navigate = useNavigate();
   const auth = getAuth();
@@ -28,12 +29,9 @@ const Navbar = () => {
         <Link to="/PostPage" className="navbar-link">
           Posts
         </Link>
-        {/* <WalletButton
-          className="navbar-link"
-          buttonName="Connect Wallet"
-          buttonColor="#010101"
-        /> */}
-        {/* <WalletButton className="navbar-link" /> */}
+        <div className="wallet">
+          <Wallet />
+        </div>
       </div>
       <button className="Btn navbar-link " onClick={SignOut}>
         Sign out

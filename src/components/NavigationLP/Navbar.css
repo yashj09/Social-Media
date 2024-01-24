@@ -5,7 +5,11 @@
   align-items: center;
   height: 60px;
 }
-
+.navwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .navbar-link {
   text-decoration: none;
   color: #ffffff;
@@ -13,7 +17,9 @@
   border-radius: 15px;
   transition: all ease 0.4s;
 }
-
+.wallet {
+  margin-left: 5px;
+}
 .navbar-link:hover {
   background-color: #555;
 }

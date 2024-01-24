@@ -3,7 +3,7 @@ import {
   DynamicWidget,
 } from "@dynamic-labs/sdk-react-core";
 import { EthereumWalletConnectors } from "@dynamic-labs/ethereum";
-
+import "./Wallet.css";
 import React from "react";
 
 const Wallet = () => {

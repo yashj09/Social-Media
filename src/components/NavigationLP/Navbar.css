@@ -1,0 +1,19 @@
+.navMenu {
+  background-color: #010101;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 15px;
+  transition: all ease 0.4s;
+}
+
+.navbar-link:hover {
+  background-color: #555;
+}

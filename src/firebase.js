@@ -1,21 +1,23 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
+import { getDatabase } from 'firebase/database';
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC6zy7xzugOo6bhqnvh2w3vHVzWQgjRTBs",
-  authDomain: "social-media-ad91f.firebaseapp.com",
-  projectId: "social-media-ad91f",
-  storageBucket: "social-media-ad91f.appspot.com",
-  messagingSenderId: "477374456053",
-  appId: "1:477374456053:web:0a29c52402912a6786a5bc",
-  measurementId: "G-X367MWHKTL"
+  apiKey: "AIzaSyCmc3r-JJLu0cDk0rU2ecXNVy1K7Is73us",
+  authDomain: "learnhattan-v1.firebaseapp.com",
+  projectId: "learnhattan-v1",
+  storageBucket: "learnhattan-v1.appspot.com",
+  messagingSenderId: "988162200345",
+  appId: "1:988162200345:web:b5226380b8b2358d1e2b88",
+  measurementId: "G-9W4LBJ30GJ"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const auth = getAuth(app);
+const imgDB = getStorage(app);
+const txtDB = getFirestore(app);
+const realTimeDB = getDatabase(app);
+
+export { auth, app, imgDB, txtDB, realTimeDB };

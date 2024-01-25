@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 import "./Navbar.css";
-import Wallet from "../../pages/Wallet";
+import Wallet from "./Wallet";
 const Navbar = () => {
   const navigate = useNavigate();
   const auth = getAuth();

@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
-import PostForm from "./PostForm";
-import PostList from "./PostList";
-import { onAuthStateChanged } from "firebase/auth";
-import { getAuth } from "firebase/auth";
-import "./PostPage.css";
+// PostPage.js
+import React, { useState, useEffect } from 'react';
+import PostForm from './PostForm';
+import PostList from './PostList';
+import { onAuthStateChanged } from 'firebase/auth';
+import { getAuth } from 'firebase/auth';
+import './PostPage.css';
 
 const PostPage = () => {
   const [user, setUser] = useState(null);
@@ -29,11 +30,14 @@ const PostPage = () => {
   };
 
   return (
-    <div className="Postpage-container">
+    <div className='Postpage-container'>
+      
+
       {/* Popup for creating a new post */}
-      <div className={`popup ${isPopupVisible ? "visible" : ""}`}>
+      <div className={`popup ${isPopupVisible ? 'visible' : ''}`}>
         <PostForm user={user} closePopup={closePopup} />
       </div>
+
       <button onClick={openPopup}>Add Post</button>
       <PostList />
     </div>
